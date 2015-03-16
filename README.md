@@ -1,6 +1,12 @@
-netty 集成 spring mvc
+# netty 集成 spring mvc，将其作为http服务发布
 
-=================
+将netty的HttpRequest和HttpResponse对象与servlet的对象进行相互转换。
+我采用了springtest提供的用来模拟HttpServletRequest和HttpServletResponse的
+类，这两个类也是它们的子类。
+org.springframework.mock.web.MockHttpServletRequest;
+org.springframework.mock.web.MockHttpServletResponse;
+
+
 
 #### 项目功能
 
