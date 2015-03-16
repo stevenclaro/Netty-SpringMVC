@@ -67,7 +67,7 @@ public class ServletNettyHandler extends SimpleChannelInboundHandler<FullHttpReq
 //			servletRequest.setContent(baContent);
 //		}
 
-        // 设置对post请求的支持
+        // 将post请求的参数，添加到HttpServletRrequest的parameter
         try {
             ByteBuf buf=fullHttpRequest.content();
             int readable=buf.readableBytes();
