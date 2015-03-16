@@ -61,11 +61,27 @@ public class ServletNettyHandler extends SimpleChannelInboundHandler<FullHttpReq
 			servletRequest.addHeader(name, fullHttpRequest.headers().get(name));
 		}
 
-		ByteBuf bbContent = fullHttpRequest.content();
-		if(bbContent.hasArray()) {
-			byte[] baContent = bbContent.array();
-			servletRequest.setContent(baContent);
-		}
+//		ByteBuf bbContent = fullHttpRequest.content();
+//		if(bbContent.hasArray()) {
+//			byte[] baContent = bbContent.array();
+//			servletRequest.setContent(baContent);
+//		}
+
+        // 设置对post请求的支持
+        try {
+            ByteBuf buf=fullHttpRequest.content();
+            int readable=buf.readableBytes();
+            byte[] bytes=new byte[readable];
+            buf.readBytes(bytes);
+            String contentStr = UriUtils.decode(new String(bytes,"UTF-8"), "UTF-8");
+            for(String params : contentStr.split("&")){
+                String[] para = params.split("=");
+                servletRequest.addParameter(para[0],para[1]);
+            }
+        } catch (UnsupportedEncodingException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
 
 		try {
 			if (uriComponents.getQuery() != null) {
