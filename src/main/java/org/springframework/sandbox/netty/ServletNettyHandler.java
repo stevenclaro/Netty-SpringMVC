@@ -76,7 +76,11 @@ public class ServletNettyHandler extends SimpleChannelInboundHandler<FullHttpReq
             String contentStr = UriUtils.decode(new String(bytes,"UTF-8"), "UTF-8");
             for(String params : contentStr.split("&")){
                 String[] para = params.split("=");
-                servletRequest.addParameter(para[0],para[1]);
+                if(para.length > 1){
+                    servletRequest.addParameter(para[0],para[1]);
+                } else {
+                    servletRequest.addParameter(para[0],"");
+                }
             }
         } catch (UnsupportedEncodingException e) {
             // TODO Auto-generated catch block
