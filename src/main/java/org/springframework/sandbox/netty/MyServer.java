@@ -4,7 +4,11 @@ import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 public class MyServer {
+	private final static Logger logger = LoggerFactory.getLogger(MyServer.class);
 
 	private final int port;
 
@@ -20,6 +24,8 @@ public class MyServer {
 					.channel(NioServerSocketChannel.class)
 					.localAddress(port)
 					.childHandler(new DispatcherServletChannelInitializer());
+
+			logger.info("Netty server has started on port : " + port);
 
 			server.bind().sync().channel().closeFuture().sync();
 		}
