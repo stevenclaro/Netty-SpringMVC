@@ -13,8 +13,8 @@ org.springframework.mock.web.MockHttpServletResponse;
 #### 如何测试
 
 - 下载项目，启动org.springframework.sandbox.netty.MyServer
-- 浏览器访问localhost:8080
+- 浏览器访问 http://localhost:8080/hello/foo
 
 #### 如何使用
 
-- 在org.springframework.sandbox.mvc.TestController中，你可以修改自己的业务
+- 在org.springframework.sandbox.mvc.TestController中，你可以添加自己的方法
