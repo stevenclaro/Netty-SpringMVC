@@ -30,11 +30,16 @@ public class DispatcherServletChannelInitializer extends ChannelInitializer<Sock
 		AnnotationConfigWebApplicationContext wac = new AnnotationConfigWebApplicationContext();
 		wac.setServletContext(servletContext);
 		wac.setServletConfig(servletConfig);
-		wac.register(WebConfig.class);
+		wac.register(AppConfig.class);
 		wac.refresh();
 
 		this.dispatcherServlet = new DispatcherServlet(wac);
 		this.dispatcherServlet.init(servletConfig);
+
+		//set spring config in xml
+		//this.dispatcherServlet = new DispatcherServlet();
+		//this.dispatcherServlet.setContextConfigLocation("applicationContext.xml");
+		//this.dispatcherServlet.init(servletConfig);
 	}
 
 	@Override
@@ -53,13 +58,6 @@ public class DispatcherServletChannelInitializer extends ChannelInitializer<Sock
 		pipeline.addLast("encoder", new HttpResponseEncoder());
 		pipeline.addLast("chunkedWriter", new ChunkedWriteHandler());
 		pipeline.addLast("handler", new ServletNettyHandler(this.dispatcherServlet));
-	}
-
-
-	@Configuration
-	@EnableWebMvc
-	@ComponentScan(basePackages="org.springframework.sandbox.mvc")
-	static class WebConfig extends WebMvcConfigurerAdapter {
 	}
 
 }
