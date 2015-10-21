@@ -11,6 +11,6 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
  */
 @Configuration
 @EnableWebMvc
-@ImportResource({"classpath:/applicationContext.xml"})
+@ImportResource({"classpath*:/applicationContext.xml"})
 public class AppConfig {
 }

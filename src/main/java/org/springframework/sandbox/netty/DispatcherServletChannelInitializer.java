@@ -38,7 +38,7 @@ public class DispatcherServletChannelInitializer extends ChannelInitializer<Sock
 
 		//set spring config in xml
 		//this.dispatcherServlet = new DispatcherServlet();
-		//this.dispatcherServlet.setContextConfigLocation("applicationContext.xml");
+		//this.dispatcherServlet.setContextConfigLocation("classpath*:/applicationContext.xml");
 		//this.dispatcherServlet.init(servletConfig);
 	}
 
