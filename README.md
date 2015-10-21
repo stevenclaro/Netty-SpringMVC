@@ -13,8 +13,14 @@ org.springframework.mock.web.MockHttpServletResponse;
 #### 如何测试
 
 - 下载项目，启动org.springframework.sandbox.netty.MyServer
-- 浏览器访问 http://localhost:8080/hello/foo
+- 浏览器访问 http://localhost:8080/hello/foo, 如果返回结果，表示启动成功
 
-#### 如何使用
+#### 如何打包并发布
+
+- 使用maven打包：mvn package
+- 启动jar：java -jar target/Netty-SpringMVC-1.0.0-SNAPSHOT.jar
+- 浏览器访问 http://localhost:8080/hello/foo, 如果返回结果，表示启动成功
+
+#### 如何添加自己的业务
 
 - 在org.springframework.sandbox.mvc.TestController中，你可以添加自己的方法
