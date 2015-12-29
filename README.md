@@ -24,3 +24,8 @@ org.springframework.mock.web.MockHttpServletResponse;
 #### 如何添加自己的业务
 
 - 在org.springframework.sandbox.mvc.TestController中，你可以添加自己的方法
+
+#### 待添加的功能
+
+- 热部署
+- 集群
