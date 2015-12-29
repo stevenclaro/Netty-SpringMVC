@@ -27,5 +27,5 @@ org.springframework.mock.web.MockHttpServletResponse;
 
 #### 待添加的功能
 
-- 热部署
-- 集群
+- 热部署(Hot deployment)
+- 集群(cluster)
