@@ -29,3 +29,8 @@ org.springframework.mock.web.MockHttpServletResponse;
 
 - 热部署(Hot deployment)
 - 集群(cluster)
+
+#### 历史版本
+
+- 0.0.2 : 集成mybatis
+- 0.0.1 : 实现netty+springMVC的集成
