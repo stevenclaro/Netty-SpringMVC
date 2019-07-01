@@ -1,0 +1,12 @@
+2019-07-01 15:41:02.893 [main] INFO  o.s.w.c.s.AnnotationConfigWebApplicationContext - Refreshing Root WebApplicationContext: startup date [Mon Jul 01 15:41:02 CST 2019]; root of context hierarchy
+2019-07-01 15:41:02.981 [main] INFO  o.s.w.c.s.AnnotationConfigWebApplicationContext - Registering annotated classes: [class org.springframework.sandbox.netty.AppConfig]
+2019-07-01 15:41:03.094 [main] INFO  o.s.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from URL [file:/D:/git/Netty-SpringMVC/target/classes/applicationContext.xml]
+2019-07-01 15:41:03.364 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/Netty/Spring],methods=[],params=[],headers=[],consumes=[],produces=[text/html;charset=utf-8],custom=[]}" onto public java.lang.String org.springframework.sandbox.mvc.StevenTest.getShopInJSON(javax.servlet.http.HttpServletRequest)
+2019-07-01 15:41:03.366 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hello/foo],methods=[],params=[],headers=[],consumes=[],produces=[text/html;charset=utf-8],custom=[]}" onto public java.lang.String org.springframework.sandbox.mvc.TestController.getShopInJSON(javax.servlet.http.HttpServletRequest)
+2019-07-01 15:41:03.436 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Mon Jul 01 15:41:02 CST 2019]; root of context hierarchy
+2019-07-01 15:41:03.467 [main] INFO  org.springframework.mock.web.MockServletContext - Initializing Spring FrameworkServlet ''
+2019-07-01 15:41:03.467 [main] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet '': initialization started
+2019-07-01 15:41:03.474 [main] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet '': initialization completed in 7 ms
+2019-07-01 15:41:03.474 [main] INFO  org.springframework.sandbox.netty.MyServer - Netty server has started on port : 8080
+2019-07-01 15:41:13.880 [nioEventLoopGroup-4-1] WARN  org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/netty/spring] in DispatcherServlet with name ''
+2019-07-01 15:41:30.343 [nioEventLoopGroup-4-4] WARN  org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/Netty/spring] in DispatcherServlet with name ''

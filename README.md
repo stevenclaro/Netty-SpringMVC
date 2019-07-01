@@ -34,3 +34,7 @@ org.springframework.mock.web.MockHttpServletResponse;
 
 - 0.0.2 : 集成mybatis
 - 0.0.1 : 实现netty+springMVC的集成
+
+2019.7.1 更新了StevenTest
+SpringMVC初始化必须要在Main中执行。执行后每个Socket连接的时候，Channel都必须要被创建。所以Spring的dispacth必须要作为
+单例被执行。不需要每次都执行dispatch的初始化
