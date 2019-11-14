@@ -1,0 +1,184 @@
+2019-10-25 17:11:29.974 [main] INFO  o.s.w.c.s.AnnotationConfigWebApplicationContext - Refreshing Root WebApplicationContext: startup date [Fri Oct 25 17:11:29 CST 2019]; root of context hierarchy
+2019-10-25 17:11:30.087 [main] INFO  o.s.w.c.s.AnnotationConfigWebApplicationContext - Registering annotated classes: [class org.springframework.sandbox.netty.AppConfig]
+2019-10-25 17:11:30.179 [main] INFO  o.s.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from URL [file:/D:/git/Netty-SpringMVC/target/classes/applicationContext.xml]
+2019-10-25 17:11:30.484 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/Netty/Spring],methods=[],params=[],headers=[],consumes=[],produces=[text/html;charset=utf-8],custom=[]}" onto public java.lang.String org.springframework.sandbox.mvc.StevenTest.getShopInJSON(javax.servlet.http.HttpServletRequest)
+2019-10-25 17:11:30.485 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hello/foo],methods=[],params=[],headers=[],consumes=[],produces=[text/html;charset=utf-8],custom=[]}" onto public java.lang.String org.springframework.sandbox.mvc.TestController.getShopInJSON(javax.servlet.http.HttpServletRequest)
+2019-10-25 17:11:30.603 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Fri Oct 25 17:11:29 CST 2019]; root of context hierarchy
+2019-10-25 17:11:30.644 [main] INFO  org.springframework.mock.web.MockServletContext - Initializing Spring FrameworkServlet ''
+2019-10-25 17:11:30.644 [main] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet '': initialization started
+2019-10-25 17:11:30.652 [main] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet '': initialization completed in 8 ms
+2019-10-25 17:11:30.652 [main] INFO  org.springframework.sandbox.netty.MyServer - Netty server has started on port : 8080
+2019-10-25 17:12:06.259 [nioEventLoopGroup-4-2] WARN  org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/favicon.ico] in DispatcherServlet with name ''
+2019-10-25 19:49:37.373 [main] INFO  o.s.w.c.s.AnnotationConfigWebApplicationContext - Refreshing Root WebApplicationContext: startup date [Fri Oct 25 19:49:37 CST 2019]; root of context hierarchy
+2019-10-25 19:49:37.446 [main] INFO  o.s.w.c.s.AnnotationConfigWebApplicationContext - Registering annotated classes: [class org.springframework.sandbox.netty.AppConfig]
+2019-10-25 19:49:37.525 [main] INFO  o.s.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from URL [file:/D:/git/Netty-SpringMVC/target/classes/applicationContext.xml]
+2019-10-25 19:49:37.891 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Fri Oct 25 19:49:37 CST 2019]; root of context hierarchy
+2019-10-25 19:49:37.915 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/Netty/Spring],methods=[],params=[],headers=[],consumes=[],produces=[text/html;charset=utf-8],custom=[]}" onto public java.lang.String org.springframework.sandbox.mvc.StevenTest.getShopInJSON(javax.servlet.http.HttpServletRequest)
+2019-10-25 19:49:37.916 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hello/foo],methods=[],params=[],headers=[],consumes=[],produces=[text/html;charset=utf-8],custom=[]}" onto public java.lang.String org.springframework.sandbox.mvc.TestController.getShopInJSON(javax.servlet.http.HttpServletRequest)
+2019-10-25 19:49:37.931 [main] INFO  org.springframework.mock.web.MockServletContext - Initializing Spring FrameworkServlet ''
+2019-10-25 19:49:37.932 [main] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet '': initialization started
+2019-10-25 19:49:37.939 [main] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet '': initialization completed in 7 ms
+2019-10-25 19:49:37.939 [main] INFO  org.springframework.sandbox.netty.MyServer - Netty server has started on port : 8080
+2019-10-25 20:24:33.420 [nioEventLoopGroup-2-2] WARN  io.netty.channel.DefaultChannelPipeline - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[na:1.8.0_131]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[na:1.8.0_131]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[na:1.8.0_131]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192) ~[na:1.8.0_131]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380) ~[na:1.8.0_131]
+	at io.netty.buffer.UnpooledUnsafeDirectByteBuf.setBytes(UnpooledUnsafeDirectByteBuf.java:446) ~[netty-buffer-4.0.23.Final.jar:4.0.23.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:881) ~[netty-buffer-4.0.23.Final.jar:4.0.23.Final]
+	at io.netty.buffer.WrappedByteBuf.writeBytes(WrappedByteBuf.java:641) ~[netty-buffer-4.0.23.Final.jar:4.0.23.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:225) ~[netty-transport-4.0.23.Final.jar:4.0.23.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:119) ~[netty-transport-4.0.23.Final.jar:4.0.23.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:511) [netty-transport-4.0.23.Final.jar:4.0.23.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:468) [netty-transport-4.0.23.Final.jar:4.0.23.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:382) [netty-transport-4.0.23.Final.jar:4.0.23.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:354) [netty-transport-4.0.23.Final.jar:4.0.23.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:116) [netty-common-4.0.23.Final.jar:4.0.23.Final]
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:137) [netty-common-4.0.23.Final.jar:4.0.23.Final]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_131]
+2019-10-25 20:24:33.421 [nioEventLoopGroup-2-1] WARN  io.netty.channel.DefaultChannelPipeline - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[na:1.8.0_131]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[na:1.8.0_131]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[na:1.8.0_131]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192) ~[na:1.8.0_131]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380) ~[na:1.8.0_131]
+	at io.netty.buffer.UnpooledUnsafeDirectByteBuf.setBytes(UnpooledUnsafeDirectByteBuf.java:446) ~[netty-buffer-4.0.23.Final.jar:4.0.23.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:881) ~[netty-buffer-4.0.23.Final.jar:4.0.23.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:225) ~[netty-transport-4.0.23.Final.jar:4.0.23.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:119) ~[netty-transport-4.0.23.Final.jar:4.0.23.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:511) [netty-transport-4.0.23.Final.jar:4.0.23.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:468) [netty-transport-4.0.23.Final.jar:4.0.23.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:382) [netty-transport-4.0.23.Final.jar:4.0.23.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:354) [netty-transport-4.0.23.Final.jar:4.0.23.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:116) [netty-common-4.0.23.Final.jar:4.0.23.Final]
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:137) [netty-common-4.0.23.Final.jar:4.0.23.Final]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_131]
+2019-10-25 20:47:12.008 [main] INFO  o.s.w.c.s.AnnotationConfigWebApplicationContext - Refreshing Root WebApplicationContext: startup date [Fri Oct 25 20:47:12 CST 2019]; root of context hierarchy
+2019-10-25 20:47:12.089 [main] INFO  o.s.w.c.s.AnnotationConfigWebApplicationContext - Registering annotated classes: [class org.springframework.sandbox.netty.AppConfig]
+2019-10-25 20:47:12.164 [main] INFO  o.s.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from URL [file:/D:/git/Netty-SpringMVC/target/classes/applicationContext.xml]
+2019-10-25 20:47:12.497 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Fri Oct 25 20:47:12 CST 2019]; root of context hierarchy
+2019-10-25 20:47:12.528 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/Netty/Spring],methods=[],params=[],headers=[],consumes=[],produces=[text/html;charset=utf-8],custom=[]}" onto public java.lang.String org.springframework.sandbox.mvc.StevenTest.getShopInJSON(javax.servlet.http.HttpServletRequest)
+2019-10-25 20:47:12.529 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hello/foo],methods=[],params=[],headers=[],consumes=[],produces=[text/html;charset=utf-8],custom=[]}" onto public java.lang.String org.springframework.sandbox.mvc.TestController.getShopInJSON(javax.servlet.http.HttpServletRequest)
+2019-10-25 20:47:12.553 [main] INFO  org.springframework.mock.web.MockServletContext - Initializing Spring FrameworkServlet ''
+2019-10-25 20:47:12.553 [main] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet '': initialization started
+2019-10-25 20:47:12.560 [main] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet '': initialization completed in 7 ms
+2019-10-25 20:47:12.560 [main] INFO  org.springframework.sandbox.netty.MyServer - Netty server has started on port : 8080
+2019-10-25 22:35:58.874 [nioEventLoopGroup-2-1] INFO  o.s.w.c.s.AnnotationConfigWebApplicationContext - Refreshing Root WebApplicationContext: startup date [Fri Oct 25 22:35:58 CST 2019]; root of context hierarchy
+2019-10-25 22:35:58.948 [nioEventLoopGroup-2-1] INFO  o.s.w.c.s.AnnotationConfigWebApplicationContext - Registering annotated classes: [class org.springframework.sandbox.netty.AppConfig]
+2019-10-25 22:35:59.024 [nioEventLoopGroup-2-1] INFO  o.s.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from URL [file:/D:/git/Netty-SpringMVC/target/classes/applicationContext.xml]
+2019-10-25 22:35:59.309 [nioEventLoopGroup-2-1] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/Netty/Spring],methods=[],params=[],headers=[],consumes=[],produces=[text/html;charset=utf-8],custom=[]}" onto public java.lang.String org.springframework.sandbox.mvc.StevenTest.getShopInJSON(javax.servlet.http.HttpServletRequest)
+2019-10-25 22:35:59.310 [nioEventLoopGroup-2-1] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hello/foo],methods=[],params=[],headers=[],consumes=[],produces=[text/html;charset=utf-8],custom=[]}" onto public java.lang.String org.springframework.sandbox.mvc.TestController.getShopInJSON(javax.servlet.http.HttpServletRequest)
+2019-10-25 22:35:59.386 [nioEventLoopGroup-2-1] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Fri Oct 25 22:35:58 CST 2019]; root of context hierarchy
+2019-10-25 22:35:59.434 [nioEventLoopGroup-2-1] INFO  org.springframework.mock.web.MockServletContext - Initializing Spring FrameworkServlet ''
+2019-10-25 22:35:59.434 [nioEventLoopGroup-2-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet '': initialization started
+2019-10-25 22:35:59.443 [nioEventLoopGroup-2-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet '': initialization completed in 9 ms
+2019-10-25 22:40:09.187 [nioEventLoopGroup-2-1] INFO  o.s.w.c.s.AnnotationConfigWebApplicationContext - Refreshing Root WebApplicationContext: startup date [Fri Oct 25 22:40:09 CST 2019]; root of context hierarchy
+2019-10-25 22:40:09.255 [nioEventLoopGroup-2-1] INFO  o.s.w.c.s.AnnotationConfigWebApplicationContext - Registering annotated classes: [class org.springframework.sandbox.netty.AppConfig]
+2019-10-25 22:40:09.330 [nioEventLoopGroup-2-1] INFO  o.s.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from URL [file:/D:/git/Netty-SpringMVC/target/classes/applicationContext.xml]
+2019-10-25 22:40:09.603 [nioEventLoopGroup-2-1] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/Netty/Spring],methods=[],params=[],headers=[],consumes=[],produces=[text/html;charset=utf-8],custom=[]}" onto public java.lang.String org.springframework.sandbox.mvc.StevenTest.getShopInJSON(javax.servlet.http.HttpServletRequest)
+2019-10-25 22:40:09.604 [nioEventLoopGroup-2-1] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hello/foo],methods=[],params=[],headers=[],consumes=[],produces=[text/html;charset=utf-8],custom=[]}" onto public java.lang.String org.springframework.sandbox.mvc.TestController.getShopInJSON(javax.servlet.http.HttpServletRequest)
+2019-10-25 22:40:09.677 [nioEventLoopGroup-2-1] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Fri Oct 25 22:40:09 CST 2019]; root of context hierarchy
+2019-10-25 22:40:09.721 [nioEventLoopGroup-2-1] INFO  org.springframework.mock.web.MockServletContext - Initializing Spring FrameworkServlet ''
+2019-10-25 22:40:09.721 [nioEventLoopGroup-2-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet '': initialization started
+2019-10-25 22:40:09.728 [nioEventLoopGroup-2-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet '': initialization completed in 7 ms
+2019-10-25 22:40:43.494 [nioEventLoopGroup-2-1] INFO  o.s.w.c.s.AnnotationConfigWebApplicationContext - Refreshing Root WebApplicationContext: startup date [Fri Oct 25 22:40:43 CST 2019]; root of context hierarchy
+2019-10-25 22:40:43.564 [nioEventLoopGroup-2-1] INFO  o.s.w.c.s.AnnotationConfigWebApplicationContext - Registering annotated classes: [class org.springframework.sandbox.netty.AppConfig]
+2019-10-25 22:40:43.647 [nioEventLoopGroup-2-1] INFO  o.s.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from URL [file:/D:/git/Netty-SpringMVC/target/classes/applicationContext.xml]
+2019-10-25 22:40:43.920 [nioEventLoopGroup-2-1] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/Netty/Spring],methods=[],params=[],headers=[],consumes=[],produces=[text/html;charset=utf-8],custom=[]}" onto public java.lang.String org.springframework.sandbox.mvc.StevenTest.getShopInJSON(javax.servlet.http.HttpServletRequest)
+2019-10-25 22:40:43.920 [nioEventLoopGroup-2-1] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hello/foo],methods=[],params=[],headers=[],consumes=[],produces=[text/html;charset=utf-8],custom=[]}" onto public java.lang.String org.springframework.sandbox.mvc.TestController.getShopInJSON(javax.servlet.http.HttpServletRequest)
+2019-10-25 22:40:43.991 [nioEventLoopGroup-2-1] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Fri Oct 25 22:40:43 CST 2019]; root of context hierarchy
+2019-10-25 22:40:44.039 [nioEventLoopGroup-2-1] INFO  org.springframework.mock.web.MockServletContext - Initializing Spring FrameworkServlet ''
+2019-10-25 22:40:44.039 [nioEventLoopGroup-2-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet '': initialization started
+2019-10-25 22:40:44.046 [nioEventLoopGroup-2-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet '': initialization completed in 7 ms
+2019-10-25 22:40:55.179 [nioEventLoopGroup-2-1] WARN  io.netty.util.concurrent.DefaultPromise - An exception was thrown by org.springframework.sandbox.netty.MyClient$2.operationComplete()
+java.lang.NullPointerException: null
+	at org.springframework.sandbox.netty.MyClient$2.operationComplete(MyClient.java:63) ~[classes/:na]
+	at org.springframework.sandbox.netty.MyClient$2.operationComplete(MyClient.java:59) ~[classes/:na]
+	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:680) [netty-common-4.0.23.Final.jar:4.0.23.Final]
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:567) [netty-common-4.0.23.Final.jar:4.0.23.Final]
+	at io.netty.util.concurrent.DefaultPromise.trySuccess(DefaultPromise.java:406) [netty-common-4.0.23.Final.jar:4.0.23.Final]
+	at io.netty.channel.DefaultChannelPromise.trySuccess(DefaultChannelPromise.java:82) [netty-transport-4.0.23.Final.jar:4.0.23.Final]
+	at io.netty.channel.AbstractChannel$CloseFuture.setClosed(AbstractChannel.java:870) [netty-transport-4.0.23.Final.jar:4.0.23.Final]
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.close(AbstractChannel.java:550) [netty-transport-4.0.23.Final.jar:4.0.23.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.close(DefaultChannelPipeline.java:1039) [netty-transport-4.0.23.Final.jar:4.0.23.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeClose(AbstractChannelHandlerContext.java:568) [netty-transport-4.0.23.Final.jar:4.0.23.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.close(AbstractChannelHandlerContext.java:553) [netty-transport-4.0.23.Final.jar:4.0.23.Final]
+	at io.netty.channel.ChannelDuplexHandler.close(ChannelDuplexHandler.java:73) [netty-transport-4.0.23.Final.jar:4.0.23.Final]
+	at io.netty.handler.logging.LoggingHandler.close(LoggingHandler.java:268) [netty-handler-4.0.23.Final.jar:4.0.23.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeClose(AbstractChannelHandlerContext.java:568) [netty-transport-4.0.23.Final.jar:4.0.23.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.close(AbstractChannelHandlerContext.java:553) [netty-transport-4.0.23.Final.jar:4.0.23.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.close(AbstractChannelHandlerContext.java:419) [netty-transport-4.0.23.Final.jar:4.0.23.Final]
+	at org.springframework.sandbox.netty.TimeClientHandler.exceptionCaught(TimeClientHandler.java:53) [classes/:na]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeExceptionCaught(AbstractChannelHandlerContext.java:271) [netty-transport-4.0.23.Final.jar:4.0.23.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireExceptionCaught(AbstractChannelHandlerContext.java:249) [netty-transport-4.0.23.Final.jar:4.0.23.Final]
+	at io.netty.channel.ChannelInboundHandlerAdapter.exceptionCaught(ChannelInboundHandlerAdapter.java:131) [netty-transport-4.0.23.Final.jar:4.0.23.Final]
+	at io.netty.handler.logging.LoggingHandler.exceptionCaught(LoggingHandler.java:222) [netty-handler-4.0.23.Final.jar:4.0.23.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeExceptionCaught(AbstractChannelHandlerContext.java:271) [netty-transport-4.0.23.Final.jar:4.0.23.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireExceptionCaught(AbstractChannelHandlerContext.java:249) [netty-transport-4.0.23.Final.jar:4.0.23.Final]
+	at io.netty.channel.DefaultChannelPipeline.fireExceptionCaught(DefaultChannelPipeline.java:775) [netty-transport-4.0.23.Final.jar:4.0.23.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.handleReadException(AbstractNioByteChannel.java:87) [netty-transport-4.0.23.Final.jar:4.0.23.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:161) [netty-transport-4.0.23.Final.jar:4.0.23.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:511) [netty-transport-4.0.23.Final.jar:4.0.23.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:468) [netty-transport-4.0.23.Final.jar:4.0.23.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:382) [netty-transport-4.0.23.Final.jar:4.0.23.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:354) [netty-transport-4.0.23.Final.jar:4.0.23.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:116) [netty-common-4.0.23.Final.jar:4.0.23.Final]
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:137) [netty-common-4.0.23.Final.jar:4.0.23.Final]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_131]
+2019-10-25 22:41:36.787 [nioEventLoopGroup-2-1] INFO  o.s.w.c.s.AnnotationConfigWebApplicationContext - Refreshing Root WebApplicationContext: startup date [Fri Oct 25 22:41:36 CST 2019]; root of context hierarchy
+2019-10-25 22:41:36.854 [nioEventLoopGroup-2-1] INFO  o.s.w.c.s.AnnotationConfigWebApplicationContext - Registering annotated classes: [class org.springframework.sandbox.netty.AppConfig]
+2019-10-25 22:41:36.929 [nioEventLoopGroup-2-1] INFO  o.s.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from URL [file:/D:/git/Netty-SpringMVC/target/classes/applicationContext.xml]
+2019-10-25 22:41:37.211 [nioEventLoopGroup-2-1] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/Netty/Spring],methods=[],params=[],headers=[],consumes=[],produces=[text/html;charset=utf-8],custom=[]}" onto public java.lang.String org.springframework.sandbox.mvc.StevenTest.getShopInJSON(javax.servlet.http.HttpServletRequest)
+2019-10-25 22:41:37.212 [nioEventLoopGroup-2-1] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hello/foo],methods=[],params=[],headers=[],consumes=[],produces=[text/html;charset=utf-8],custom=[]}" onto public java.lang.String org.springframework.sandbox.mvc.TestController.getShopInJSON(javax.servlet.http.HttpServletRequest)
+2019-10-25 22:41:37.295 [nioEventLoopGroup-2-1] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Fri Oct 25 22:41:36 CST 2019]; root of context hierarchy
+2019-10-25 22:41:37.338 [nioEventLoopGroup-2-1] INFO  org.springframework.mock.web.MockServletContext - Initializing Spring FrameworkServlet ''
+2019-10-25 22:41:37.338 [nioEventLoopGroup-2-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet '': initialization started
+2019-10-25 22:41:37.347 [nioEventLoopGroup-2-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet '': initialization completed in 9 ms
+2019-10-25 22:44:26.241 [nioEventLoopGroup-2-1] INFO  o.s.w.c.s.AnnotationConfigWebApplicationContext - Refreshing Root WebApplicationContext: startup date [Fri Oct 25 22:44:26 CST 2019]; root of context hierarchy
+2019-10-25 22:44:26.324 [nioEventLoopGroup-2-1] INFO  o.s.w.c.s.AnnotationConfigWebApplicationContext - Registering annotated classes: [class org.springframework.sandbox.netty.AppConfig]
+2019-10-25 22:44:26.414 [nioEventLoopGroup-2-1] INFO  o.s.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from URL [file:/D:/git/Netty-SpringMVC/target/classes/applicationContext.xml]
+2019-10-25 22:44:26.702 [nioEventLoopGroup-2-1] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/Netty/Spring],methods=[],params=[],headers=[],consumes=[],produces=[text/html;charset=utf-8],custom=[]}" onto public java.lang.String org.springframework.sandbox.mvc.StevenTest.getShopInJSON(javax.servlet.http.HttpServletRequest)
+2019-10-25 22:44:26.703 [nioEventLoopGroup-2-1] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hello/foo],methods=[],params=[],headers=[],consumes=[],produces=[text/html;charset=utf-8],custom=[]}" onto public java.lang.String org.springframework.sandbox.mvc.TestController.getShopInJSON(javax.servlet.http.HttpServletRequest)
+2019-10-25 22:44:26.804 [nioEventLoopGroup-2-1] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Fri Oct 25 22:44:26 CST 2019]; root of context hierarchy
+2019-10-25 22:44:26.883 [nioEventLoopGroup-2-1] INFO  org.springframework.mock.web.MockServletContext - Initializing Spring FrameworkServlet ''
+2019-10-25 22:44:26.883 [nioEventLoopGroup-2-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet '': initialization started
+2019-10-25 22:44:26.894 [nioEventLoopGroup-2-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet '': initialization completed in 11 ms
+2019-10-25 22:45:04.129 [nioEventLoopGroup-2-1] INFO  o.s.w.c.s.AnnotationConfigWebApplicationContext - Refreshing Root WebApplicationContext: startup date [Fri Oct 25 22:45:04 CST 2019]; root of context hierarchy
+2019-10-25 22:45:04.209 [nioEventLoopGroup-2-1] INFO  o.s.w.c.s.AnnotationConfigWebApplicationContext - Registering annotated classes: [class org.springframework.sandbox.netty.AppConfig]
+2019-10-25 22:45:04.292 [nioEventLoopGroup-2-1] INFO  o.s.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from URL [file:/D:/git/Netty-SpringMVC/target/classes/applicationContext.xml]
+2019-10-25 22:45:04.572 [nioEventLoopGroup-2-1] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/Netty/Spring],methods=[],params=[],headers=[],consumes=[],produces=[text/html;charset=utf-8],custom=[]}" onto public java.lang.String org.springframework.sandbox.mvc.StevenTest.getShopInJSON(javax.servlet.http.HttpServletRequest)
+2019-10-25 22:45:04.573 [nioEventLoopGroup-2-1] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hello/foo],methods=[],params=[],headers=[],consumes=[],produces=[text/html;charset=utf-8],custom=[]}" onto public java.lang.String org.springframework.sandbox.mvc.TestController.getShopInJSON(javax.servlet.http.HttpServletRequest)
+2019-10-25 22:45:04.667 [nioEventLoopGroup-2-1] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Fri Oct 25 22:45:04 CST 2019]; root of context hierarchy
+2019-10-25 22:45:04.755 [nioEventLoopGroup-2-1] INFO  org.springframework.mock.web.MockServletContext - Initializing Spring FrameworkServlet ''
+2019-10-25 22:45:04.755 [nioEventLoopGroup-2-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet '': initialization started
+2019-10-25 22:45:04.766 [nioEventLoopGroup-2-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet '': initialization completed in 11 ms
+2019-10-25 22:45:45.997 [nioEventLoopGroup-2-1] INFO  o.s.w.c.s.AnnotationConfigWebApplicationContext - Refreshing Root WebApplicationContext: startup date [Fri Oct 25 22:45:45 CST 2019]; root of context hierarchy
+2019-10-25 22:45:46.086 [nioEventLoopGroup-2-1] INFO  o.s.w.c.s.AnnotationConfigWebApplicationContext - Registering annotated classes: [class org.springframework.sandbox.netty.AppConfig]
+2019-10-25 22:45:46.176 [nioEventLoopGroup-2-1] INFO  o.s.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from URL [file:/D:/git/Netty-SpringMVC/target/classes/applicationContext.xml]
+2019-10-25 22:45:46.519 [nioEventLoopGroup-2-1] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Fri Oct 25 22:45:45 CST 2019]; root of context hierarchy
+2019-10-25 22:45:46.578 [nioEventLoopGroup-2-1] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/Netty/Spring],methods=[],params=[],headers=[],consumes=[],produces=[text/html;charset=utf-8],custom=[]}" onto public java.lang.String org.springframework.sandbox.mvc.StevenTest.getShopInJSON(javax.servlet.http.HttpServletRequest)
+2019-10-25 22:45:46.579 [nioEventLoopGroup-2-1] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hello/foo],methods=[],params=[],headers=[],consumes=[],produces=[text/html;charset=utf-8],custom=[]}" onto public java.lang.String org.springframework.sandbox.mvc.TestController.getShopInJSON(javax.servlet.http.HttpServletRequest)
+2019-10-25 22:45:46.626 [nioEventLoopGroup-2-1] INFO  org.springframework.mock.web.MockServletContext - Initializing Spring FrameworkServlet ''
+2019-10-25 22:45:46.626 [nioEventLoopGroup-2-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet '': initialization started
+2019-10-25 22:45:46.637 [nioEventLoopGroup-2-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet '': initialization completed in 11 ms
+2019-10-25 22:46:24.333 [nioEventLoopGroup-2-1] INFO  o.s.w.c.s.AnnotationConfigWebApplicationContext - Refreshing Root WebApplicationContext: startup date [Fri Oct 25 22:46:24 CST 2019]; root of context hierarchy
+2019-10-25 22:46:24.415 [nioEventLoopGroup-2-1] INFO  o.s.w.c.s.AnnotationConfigWebApplicationContext - Registering annotated classes: [class org.springframework.sandbox.netty.AppConfig]
+2019-10-25 22:46:24.499 [nioEventLoopGroup-2-1] INFO  o.s.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from URL [file:/D:/git/Netty-SpringMVC/target/classes/applicationContext.xml]
+2019-10-25 22:46:24.849 [nioEventLoopGroup-2-1] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Fri Oct 25 22:46:24 CST 2019]; root of context hierarchy
+2019-10-25 22:46:24.890 [nioEventLoopGroup-2-1] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/Netty/Spring],methods=[],params=[],headers=[],consumes=[],produces=[text/html;charset=utf-8],custom=[]}" onto public java.lang.String org.springframework.sandbox.mvc.StevenTest.getShopInJSON(javax.servlet.http.HttpServletRequest)
+2019-10-25 22:46:24.891 [nioEventLoopGroup-2-1] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hello/foo],methods=[],params=[],headers=[],consumes=[],produces=[text/html;charset=utf-8],custom=[]}" onto public java.lang.String org.springframework.sandbox.mvc.TestController.getShopInJSON(javax.servlet.http.HttpServletRequest)
+2019-10-25 22:46:24.912 [nioEventLoopGroup-2-1] INFO  org.springframework.mock.web.MockServletContext - Initializing Spring FrameworkServlet ''
+2019-10-25 22:46:24.912 [nioEventLoopGroup-2-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet '': initialization started
+2019-10-25 22:46:24.953 [nioEventLoopGroup-2-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet '': initialization completed in 41 ms
+2019-10-25 22:50:05.116 [nioEventLoopGroup-2-1] INFO  o.s.w.c.s.AnnotationConfigWebApplicationContext - Refreshing Root WebApplicationContext: startup date [Fri Oct 25 22:50:05 CST 2019]; root of context hierarchy
+2019-10-25 22:50:05.201 [nioEventLoopGroup-2-1] INFO  o.s.w.c.s.AnnotationConfigWebApplicationContext - Registering annotated classes: [class org.springframework.sandbox.netty.AppConfig]
+2019-10-25 22:50:05.286 [nioEventLoopGroup-2-1] INFO  o.s.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from URL [file:/D:/git/Netty-SpringMVC/target/classes/applicationContext.xml]
+2019-10-25 22:50:05.647 [nioEventLoopGroup-2-1] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/Netty/Spring],methods=[],params=[],headers=[],consumes=[],produces=[text/html;charset=utf-8],custom=[]}" onto public java.lang.String org.springframework.sandbox.mvc.StevenTest.getShopInJSON(javax.servlet.http.HttpServletRequest)
+2019-10-25 22:50:05.648 [nioEventLoopGroup-2-1] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hello/foo],methods=[],params=[],headers=[],consumes=[],produces=[text/html;charset=utf-8],custom=[]}" onto public java.lang.String org.springframework.sandbox.mvc.TestController.getShopInJSON(javax.servlet.http.HttpServletRequest)
+2019-10-25 22:50:05.667 [nioEventLoopGroup-2-1] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Fri Oct 25 22:50:05 CST 2019]; root of context hierarchy
+2019-10-25 22:50:05.698 [nioEventLoopGroup-2-1] INFO  org.springframework.mock.web.MockServletContext - Initializing Spring FrameworkServlet ''
+2019-10-25 22:50:05.698 [nioEventLoopGroup-2-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet '': initialization started
+2019-10-25 22:50:05.738 [nioEventLoopGroup-2-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet '': initialization completed in 40 ms
